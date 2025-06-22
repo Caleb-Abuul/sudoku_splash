@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sudoku Splash</title>
+  <link rel="stylesheet" href="sudoku.css" type="text/css" media="all" />
+  
+  
+  <script src="boards.js" defer></script>
+  
+  <script src="helper.js" defer></script>
+  <script src="buttons.js" defer></script>
+  <script src="sudoku.js" defer></script>
+  
+</head>
+
+<body>
+  
+  
+  <!-- pre game -->
+  <aside class="pre-game" id="pre-game">
+    <h1 class="title">Sudoku Splash</h1>
+    <p class="welcome-msg">Welcome to Sudoku Splash!</p>
+    <p>Select Level</p>
+    
+    <div id="btns">
+      <button id="easy-btn">Easy</button>
+      <button id="medium-btn">Medium</button>
+      <button id="hard-btn">Hard</button>
+    </div>
+  </aside>
+  
+  <!-- back button -->
+ <div class="home">
+   <button class="home-btn" id="home-btn">
+     Home
+   </button>
+ </div>
+  
+  <main class="game hide" id="game">
+    <h1 id="title">Sudoku <span>Splash</span></h1>
+    <div class="panel">
+      <h2 class="error">Error: <span id="error">0</span></h2>
+      <h2 class="display-timer" id="display-timer">00:00:00</h2>
+      <button class="pause-btn" id="pause-btn" >Pause</button>
+    </div>
+   <div class="modal" id="modal">
+      <div class="results" id="results">
+        <h3 class="victory">Victory Splash</h3>
+        <p class="time-taken" id="time-taken">It took you 00</p>
+        <p class="random-msg" id="random-msg"></p>
+        <button class="reset-btn" id="reset-btn">Reset</button>
+      </div>
+      <div class="pause-popup" id="popup">
+        <h2>Pause</h2>
+        <div class="btns">
+          <button class="restart" id="restart-btn">Restart</button>
+          <button class="resume-btn" id="resume-btn">Resume</button>
+        </div>
+      </div>
+    </div>
+    <div class="board" id="board"></div>
+    <div class="digits" id="digits"></div>
+  </main>
+</body>
+
+</html>
